@@ -17,7 +17,7 @@ const Header=props=>{
            <HeaderCartButton onClick={props.onShowCart} />
            <div> 
                <div>
-          {badge>0 ?<marquee direction="left"  className={classes.btn}><span >Your  {badge} order deliver at  {JSON.parse(date.getDate())} {monthObj[JSON.parse(date.getMonth()+1)]} {JSON.parse(date.getFullYear())}  till 9:00 PM .Thankyou for Order . </span></marquee>:(<marquee direction="left" className={classes.btn}>Please place Order .</marquee>)}
+          {badge>0 ?<marquee direction="left"  className={classes.btn}><span >Your  {badge} order deliver at  {JSON.parse(date.getDate())} {monthObj[JSON.parse(date.getMonth()+1)]} {JSON.parse(date.getFullYear())}  till 9:00 PM .Thankyou for Order . </span></marquee>:(<marquee direction="left" className={classes.btn}>Please place Order ,I am Waiting... to deliver your order.</marquee>)}
 
                     </div> 
            </div>
