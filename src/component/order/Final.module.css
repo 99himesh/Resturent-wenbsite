@@ -1,0 +1,13 @@
+.finalOrder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.finalOrder h2{
+    text-align: center;
+}
+.finalOrder img{height: 300px; width: 300px; }
+.image{display: flex;  justify-content: center;}
+.button{display: flex; justify-content: center; margin: 20px 0;}
+.btn{background-color: green; padding: 10px 30px; color: white; border: none; border-radius: 10px;cursor: pointer;} 

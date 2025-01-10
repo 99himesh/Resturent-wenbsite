@@ -44,3 +44,6 @@
     background-color: #8a2b06;
     color: white;
   }
+  .food{text-align: center;}
+  .foodImage{display: flex; flex-wrap:wrap; gap: 10px; padding-top:30px ;}
+  .foodImage img{height: 200px; width: 300px;}

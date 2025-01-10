@@ -15,9 +15,7 @@ function App() {
   const HideCartHandler = () => {
     setCartIsShown(false);
   };
-  const ordershow=()=>{
-    return <h1>1332123</h1>
-}
+
 
   return (
     <CartProvider>

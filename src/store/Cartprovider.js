@@ -4,7 +4,7 @@ import CartContext from "./cart-context";
 
 const CartProvider = (props) => {
   const [items, setItems] = useState([]);
-
+  const [orders,setOrder]=useState([])
   const addItemToCartHandler = (item) => {
     const existingCartItemIndex = items.findIndex((itm) => (itm.id === item.id));
     const existingCartItem = items[existingCartItemIndex];
@@ -38,12 +38,26 @@ const CartProvider = (props) => {
     }
     setItems(updatedItemsList);
   };
+  const removeItemAllHandler=()=>{
+    setItems([])
+  }
+  const addOrderHandler=(item)=>{
+    console.log(item);
+    
+    setOrder([...orders,item])
+  }
+  console.log(orders);
+  
+
 
   const cartContext = {
     item: items,
+    order:orders,
     totalAmount: 0,
     addItem: addItemToCartHandler,
     removeItem: removeItemToCardHAndler,
+    removeAll: removeItemAllHandler,
+    addorder:addOrderHandler,
   };
 
   return (
